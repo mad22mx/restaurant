@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 0, 0);
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between; /* Distributes space between logo, menu items, and reservation button */
+    align-items: center; /* Aligns items vertically in the center */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#menu-items {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-items li {
+    margin: 0 10px; /* Adds horizontal space between menu items */
+}
+
+#menu-items li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#reservation-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    margin-left: 30px;
+}
+
+#reservation-btn {
+    border: none;
+    height: 40px;
+    width: 180px;
+    background-color: orangered;
+    color: white;
+    margin-right: 30px;
+}
+
+
+#showcase {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures the content is vertically centered */
+    height: 100vh; /* Ensures the full viewport height is used */
+}
+
+#showcase-bg {
+    background-image: url("./images/food-1.jpg");
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center; /* Centers the background image */
+    width: 90%;
+    height: 80vh; /* Use viewport height units to set a height relative to the viewport */
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+    flex-direction: column; /* Stacks buttons vertically */
+}
+
+#showcase-bg button {
+    margin: 10px; /* Adds space between buttons */
+    padding: 10px 20px; /* Adjusts button padding */
+    font-size: 16px; /* Adjusts button font size */
+    border: none;
+    background-color: orangered;
+    color: white;
+
+}
+
+#showcase-bg h1 {
+    color: white;
+    font-size: 3em;
+
+}
+
+#menu {
+    color: white;
+}
+
+#menutypes, #table-container {
+    display: flex;
+    justify-content:center;
+}
+
+#menutypes button {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(235, 0, 0);
+    border: none;
+
+}
+
+td {
+    width: 50%;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+footer div {
+    padding: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+    
+}
+.btn-clicked {
+    display: inline-block;
+    border-bottom: 2px solid white !important;
+    font-weight: bold;
+}
+
+

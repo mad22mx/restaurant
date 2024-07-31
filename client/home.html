@@ -1,1 +1,183 @@
-- includes the menu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Libretto</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+    <div id="nav-bar">
+        <div id="logo-container">
+            <a href="#"><img src="./images/logo.webp" alt="logo" id="logo"></a>
+        </div>
+        <ul id="menu-items">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="./delivery.html">Delivery</a></li>
+            <li><a href="#locations">Locations</a></li>
+        </ul>
+        <div id="reservation-container">
+            <a href="reserve.html"><button id="reservation-btn">MAKE A RESERVATION</button></a>
+        </div>
+    </div>
+    
+    <div id="showcase">
+        <div id="showcase-bg">
+            <h1>Real Neapolitan Pizza</h1>
+            <a href="reserve.html"><button>RESERVATIONS</button></a>
+            <a href="./delivery.html"><button>DELIVERY</button></a>
+        </div>
+    </div>
+
+    <div id="menu">
+        <h1 style="text-align: center;">Our Menu</h1>
+        <div id="menutypes">
+            
+            <button onclick="menuButton('meals')" id="mealsBtn" class="btn-clicked">MEALS</button>
+            <button onclick="menuButton('drinks')" id="drinksBtn" class="">DRINKS</button>
+            <button onclick="menuButton('desserts')" id="dessertsBtn" class="">DESSERTS</button>
+        </div>
+        <div id="table-container">
+            <table style="width: 80%;" id="meals-menu" class="show">
+                <tbody>
+                    <tr>
+                        <td><b>Burrata con Pomodoro</b><br>125 gram Ontario burrata, blistered tomato, garlic tomato & basil</td>
+                        <td><b>Olive e Focaccia</b><br>mixed olives and focaccia bread</td>
+                    </tr>
+                    <tr>
+                        <td><b>Margherita Magic</b><br>Classic simplicity at its best. Fresh mozzarella, ripe tomatoes, and fragrant basil on a bed of our signature tomato sauce</td>
+                        <td><b>Pepperoni Paradise</b><br>A pepperoni lover’s dream. Generous slices of spicy pepperoni on a mozzarella and tomato sauce base, with a sprinkle of Italian herbs</td>
+                    </tr>
+                    <tr>
+                        <td><b>BBQ Chicken Bliss</b><br>Tender grilled chicken, smoky BBQ sauce, red onions, and cilantro on a mozzarella cheese base, creating a sweet and savory delight</td>
+                        <td><b>Veggie Delight</b><br>A colorful medley of bell peppers, onions, mushrooms, black olives, and tomatoes on a creamy tomato sauce, topped with mozzarella</td>
+                    </tr>
+                    <tr>
+                        <td><b>Hawaiian Harmony</b><br>Hot Italian sausage, jalapeños, red onions, and bell peppers on a zesty tomato sauce, topped with mozzarella for a spicy kick</td>
+                        <td><b>Four Cheese Fantasy</b><br>A cheesy heaven featuring mozzarella, cheddar, parmesan, and blue cheese on a garlic-infused tomato sauce</td>
+                    </tr>
+                    <tr>
+                        <td><b>Spicy Sausage Sizzle</b><br>125 gram Ontario burrata, blistered tomato, garlic tomato vinaigrette & basil</td>
+                        <td><b>Mushroom Medley</b><br>An earthy blend of shiitake, portobello, and button mushrooms with garlic, olive oil, and mozzarella, finished with fresh parsley</td>
+                    </tr>
+                    <tr>
+                        <td><b>Mediterranean Marvel</b><br>Sun-dried tomatoes, Kalamata olives, feta cheese, red onions, and spinach on a garlic and herb tomato sauce</td>
+                        <td><b>Buffalo Blue</b><br>Spicy buffalo chicken, red onions, and blue cheese crumbles on a mozzarella base, drizzled with buffalo sauce for an extra punch</td>
+                    </tr>
+                    <tr>
+                        <td><b>Prosciutto Perfection</b><br>Thinly sliced prosciutto, arugula, and shaved parmesan on a light tomato sauce, finished with a balsamic glaze</td>
+                        <td><b>Pesto Primavera</b><br>A vibrant mix of cherry tomatoes, artichoke hearts, spinach, and mozzarella on a rich basil pesto sauce</td>
+                    </tr>
+                    <tr>
+                        <td><b>Truffle Treasure</b><br>A gourmet choice with truffle oil, wild mushrooms, caramelized onions, and mozzarella, topped with fresh arugula</td>
+                        <td><b>Carnivore’s Crave</b><br>A meat lover’s feast with pepperoni, sausage, ham, bacon, and ground beef on a tomato and mozzarella base</td>
+                    </tr>
+                    <tr>
+                        <td><b>Seafood Sensation</b><br>Succulent shrimp, calamari, and clams on a garlic and white wine sauce, topped with mozzarella and fresh herbs</td>
+                        <td><b>Garden Fresh Delight</b><br>A wholesome and hearty pizza loaded with zucchini, cherry tomatoes, red onions, bell peppers, spinach, and feta cheese on a pesto base, finished with a drizzle of balsamic reduction</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="width: 80%;" id="drinks-menu" class="hide">
+                <tbody>
+                    <tr>
+                        <td><b>Tropical Breeze Smoothie</b><br>A refreshing blend of mango, pineapple, and coconut milk, topped with a hint of lime for a zesty twist. Perfect for a sunny day or a tropical escape.</td>
+                        <td><b>Berry Infusion Lemonade</b><br>A vibrant lemonade infused with a medley of fresh berries, including strawberries, raspberries, and blueberries. Garnished with mint leaves for a refreshing finish.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Cucumber Mint Cooler</b><br>A soothing mix of cucumber and mint, combined with sparkling water and a splash of lemon juice. Ideal for cooling off and staying hydrated.</td>
+                        <td><b>Classic Shirley Temple</b><br>A nostalgic favorite with a twist—ginger ale, a splash of grenadine, and a maraschino cherry. Served over ice for a bubbly, sweet treat.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Iced Matcha Latte</b><br>A creamy, energizing blend of matcha green tea and milk, served over ice and lightly sweetened. Perfect for a mid-day pick-me-up.</td>
+                        <td><b>Watermelon Basil Refresher</b><br>A light and refreshing blend of juicy watermelon and aromatic basil, combined with a splash of lime juice and sparkling water. Garnished with a basil leaf for an elegant touch</td>
+                    </tr>
+                    <tr>
+                        <td><b>Spiced Apple Fizz</b><br>A warm, spiced apple cider chilled and topped with sparkling water, creating a fizzy, festive beverage that’s both comforting and refreshing.</td>
+                        <td><b>Pineapple Ginger Punch</b><br>A zesty punch featuring pineapple juice and a hint of ginger, mixed with a touch of honey and sparkling water. Served chilled, it's both invigorating and soothing.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Virgin Mojito</b><br>A classic mojito without the rum—fresh lime juice, mint, and a touch of sugar muddled together and topped with sparkling water for a crisp, refreshing taste.</td>
+                        <td><b>Fruit Punch</b><br>A colorful mix of orange, pineapple, and grape juices, blended with a splash of grenadine and garnished with assorted fruit slices. Ideal for gatherings and celebrations.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Ginger Peach Cooler</b><br>A delightful combination of fresh peaches and spicy ginger, mixed with a hint of lemon and served over ice. A flavorful way to cool down.</td>
+                        <td><b>Choco-Mint Shake</b><br>A rich and creamy chocolate milkshake with a touch of peppermint, perfect for dessert or a sweet indulgence.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <table style="width: 80%;" id="desserts-menu" class="hide">
+                <tbody>
+                    <tr>
+                        <td><b>Classic Tiramisu</b><br>Layers of espresso-soaked ladyfingers and rich mascarpone cream, dusted with cocoa powder for a luxurious Italian treat.</td>
+                        <td><b>Decadent Chocolate Lava Cake</b><br>Warm, gooey chocolate center encased in a tender cake shell, served with a scoop of vanilla ice cream.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lemon Meringue Pie</b><br>A tangy lemon custard topped with a fluffy, golden meringue, nestled in a buttery pie crust</td>
+                        <td><b>Vanilla Bean Panna Cotta</b><br>Silky smooth vanilla bean custard with a hint of citrus, finished with a fresh berry compote</td>
+                    </tr>
+                    <tr>
+                        <td><b>Salted Caramel Cheesecake</b><br>Creamy cheesecake with a buttery graham cracker crust, drizzled with homemade salted caramel sauce</td>
+                        <td><b>Berry Crumble</b><br>A medley of fresh berries topped with a crispy oat crumble, served warm with a dollop of whipped cream</td>
+                    </tr>
+                    <tr>
+                        <td><b>Matcha Green Tea Ice Cream</b><br>Creamy, subtly sweet ice cream infused with premium matcha green tea powder, offering a unique flavor experience</td>
+                        <td><b>Churros with Chocolate Dipping Sauce</b><br>Sweet coconut sticky rice paired with ripe mango slices, garnished with toasted sesame seeds.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Classic Apple Pie</b><br>Tender spiced apples encased in a flaky pastry crust, best enjoyed warm with a scoop of vanilla ice cream</td>
+                        <td><b>Mango Sticky Rice</b><br>Sweet coconut sticky rice paired with ripe mango slices, garnished with toasted sesame seeds</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <footer id="locations">
+        <div>
+            <p><b>King</b></p>
+            <p>545 King St W.</p>
+            <p>Toronto, ON M5V IMI</p>
+            <p><a href="tel:+1(415) 312-4241">(415) 312-4241</a></p>
+        </div>
+        <div>
+            <p><b>Danforth</b></p>
+            <p>550 Danforth Ave.</p>
+            <p>Toronto, ON M4K IPS</p>
+            <p><a href="tel:+1(415)455-0400">(415) 455-0400</a></p>
+        </div>
+        <div>
+            <p><b>Ossington</b></p>
+            <p>221 Ossington Ave.</p>
+            <p>Toronto, ON M6J 2ZB</p>
+            <p><a href="tel:+1(416)532-8000">(416) 532-8000</a></p>
+        </div>
+        <div>
+            <p><b>Junction</b></p>
+            <p>3011 Dundas St West</p>
+            <p>Toronto, ON M6P IZ4</p>
+            <p><a href="tel:+1(416)293-1423">(416) 293-1423</a></p>
+
+        </div>
+        <div>
+            <p><b>University</b></p>
+            <p>155 University Ave.</p>
+            <p>Toronto, ON M5H 2H7</p>
+            <p><a href="tel:+1(416)551-0433">(416) 551-0433</a></p>
+
+        </div>
+        <div>
+            <p>&copy; 2024 Pizzeria Libretto</p>
+            <p><a href="mailto:hello@pizzerialibretto.com">hello@pizzerialibretto.com</a></p>
+
+
+        </div>
+    </footer>
+
+
+    
+    <script src="./home.js"></script>
+</body>
+</html>
